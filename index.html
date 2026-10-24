@@ -5,31 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title>MARD TUBE</title>
     <style>
-/* ============================================================
-   MARD TUBE - MAIN STYLES
-   Theme: Exotic Purple (Mobile-First Dynamic Layout)
-============================================================ */
-
 :root {
     --page: #0b0712;
     --surface: #140d24;
     --surface-soft: #1d1333;
-    
     --ink: #f1edfa;
     --muted: #a395c4;
-    
     --line: #2a1c42;
     --line-strong: #402b63;
-    
     --accent: #a855f7;
     --accent-glow: rgba(168, 85, 247, 0.35);
     --accent-gradient: linear-gradient(135deg, #a855f7 0%, #d946ef 100%);
-    
     --radius: 20px;
-
     --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.5);
     --shadow-hover: 0 18px 45px rgba(168, 85, 247, 0.25);
-
     --content-width: 680px;
 }
 
@@ -89,10 +78,6 @@ a {
         box-shadow: 0 0 24px rgba(217, 70, 239, 0.5);
     }
 }
-
-/* ============================================================
-   HEADER & NAVIGATION
-============================================================ */
 
 .site-header {
     position: sticky;
@@ -184,10 +169,6 @@ nav {
     background: var(--surface-soft);
 }
 
-/* ============================================================
-   HERO SECTION
-============================================================ */
-
 .hero {
     padding: clamp(28px, 6vw, 56px) 0 24px;
     animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1);
@@ -217,10 +198,6 @@ h1 {
     letter-spacing: 0.04em;
     backdrop-filter: blur(8px);
 }
-
-/* ============================================================
-   MUSIC LIBRARY (VERTICAL MOBILE FEED)
-============================================================ */
 
 .library-section {
     padding: 12px 0 60px;
@@ -255,7 +232,6 @@ h1 {
 .track-card:nth-child(5) { animation-delay: 0.30s; }
 .track-card:nth-child(6) { animation-delay: 0.36s; }
 
-/* Responsive Video Frame for Vertical Playback */
 .video-frame {
     width: 100%;
     max-height: 70vh;
@@ -314,10 +290,6 @@ h1 {
     padding: 0 4px;
     color: var(--line-strong);
 }
-
-/* ============================================================
-   TEAM SECTION
-============================================================ */
 
 .team-section {
     padding: 0 0 60px;
@@ -378,10 +350,6 @@ h1 {
     color: var(--muted);
     font-size: 0.78rem;
 }
-
-/* ============================================================
-   FOOTER
-============================================================ */
 
 .site-footer {
     border-top: 1px solid var(--line);
@@ -456,7 +424,6 @@ h1 {
 
         <section id="library" class="library-section">
             <div class="video-grid">
-                <!-- Track 1 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="video.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -469,7 +436,6 @@ h1 {
                     </div>
                 </article>
 
-                <!-- Track 2 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="g_drill.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -482,7 +448,6 @@ h1 {
                     </div>
                 </article>
 
-                <!-- Track 3 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="mex.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -495,7 +460,6 @@ h1 {
                     </div>
                 </article>
 
-                <!-- Track 4 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="sorry.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -508,7 +472,6 @@ h1 {
                     </div>
                 </article>
 
-                <!-- Track 5 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="pasina.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -521,7 +484,6 @@ h1 {
                     </div>
                 </article>
 
-                <!-- Track 6 -->
                 <article class="track-card">
                     <div class="video-frame">
                         <video src="jawani.mp4" controls preload="auto" playsinline webkit-playsinline></video>
@@ -532,4 +494,38 @@ h1 {
                         <p class="track-artist">Pawan Singh, Kajal Raghwani</p>
                         <p class="track-details">Official Video <span>•</span> Bhojpuri Song</p>
                     </div>
-                </article>
+                </article> 
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-avatar">VB</div>
+                    <div class="team-copy">
+                        <p class="team-role">FOUNDER</p>
+                        <h3>Vansh Bamula</h3>
+                        <p class="team-affiliation">BIT Durg</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-avatar">PC</div>
+                    <div class="team-copy">
+                        <p class="team-role">CO-FOUNDER</p>
+                        <h3>Piyush Chaubey</h3>
+                        <p class="team-affiliation">BIT Durg</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">MARD TUBE</span>
+            <span>&copy; 2026 All rights reserved.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
